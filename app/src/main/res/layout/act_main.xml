@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#000000"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:padding="0dp"
+    tools:context=".Act_Main">
+
+    <com.example.camerax.widgets.layout.FLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:effectColor="#A6FFFFFF"
+        app:effectDuration="80"
+        app:effectWidth="20dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnSettings"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_margin="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_settings"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:t_animationDuration="150" />
+
+    <com.example.camerax.widgets.textview.RotationTextView
+        android:id="@+id/tvRecLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:shadowDx="0"
+        android:visibility="invisible"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="Rec | HD"
+        android:textColor="#ff0000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <com.example.camerax.widgets.rippleview.FocusView
+            android:id="@+id/focusView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            app:fv_animationDuration="200"
+            app:rv_radiusDelta="1.0"
+            app:rv_rippleColor="#73FFFFFF"
+            app:rv_rippleDuration="300" />
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.Placeholder
+            android:id="@+id/placeHolderTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Placeholder
+            android:id="@+id/placeHolderBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.camerax.widgets.textview.BlinkTextView
+            android:id="@+id/blinkTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="5dp"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="2.5"
+            android:text="00 : 00"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            app:btv_blinkColor="#FF5555"
+            app:btv_blinkInVisibleDuration="500"
+            app:btv_blinkRadius="4dp"
+            app:btv_blinkVisibleDuration="800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.camerax.widgets.button.ToggleArrayImageButton
+            android:id="@+id/btnFlash"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@id/shutterView"
+            app:layout_constraintEnd_toStartOf="@id/shutterView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/shutterView"
+            app:t_animType="VERTICAL_TRANSLATION"
+            app:t_animationDuration="150"
+            app:t_srcArray="@array/flashLightSources" />
+
+        <com.example.camerax.widgets.ZoomSeekBar
+            android:id="@+id/zoomSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toTopOf="@id/shutterView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:zsb_incrementValue="25"
+            app:zsb_max="100"
+            app:zsb_progress="0" />
+
+        <com.example.camerax.widgets.rippleview.ShutterView
+            android:id="@+id/shutterView"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_helperText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rv_radiusDelta="0.75"
+            app:rv_rippleColor="#f55"
+            app:rv_rippleDuration="180"
+            app:rv_solidColor="#FFFFFF"
+            app:sv_delayedTouchDuration="800" />
+
+        <com.example.camerax.widgets.button.ToggleArrayImageButton
+            android:id="@+id/btnToggleCamera"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@id/shutterView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/shutterView"
+            app:layout_constraintTop_toTopOf="@id/shutterView"
+            app:t_animationDuration="150"
+            app:t_srcArray="@array/toggleCameraSources" />
+
+        <TextView
+            android:id="@+id/tv_helperText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:text="@string/Str_ShutterHelp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.example.camerax.widgets.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ids="btnFlash,btnToggleCamera,btnSettings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

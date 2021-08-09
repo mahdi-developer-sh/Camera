@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlipToggleImageButton">
+        <attr name="fs_primarySrc" format="reference" />
+        <attr name="fs_secondarySrc" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ToggleArrayImageButton">
+        <attr name="t_srcArray" format="reference" />
+        <attr name="t_animationDuration" format="integer" />
+
+        <attr name="t_currentPosition" format="enum|integer">
+            <enum name="first" value="0" />
+        </attr>
+        <attr name="t_animType" format="enum">
+            <enum name="HORIZONTAL_FLIP" value="0" />
+            <enum name="VERTICAL_TRANSLATION" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_rippleColor" format="color" />
+        <attr name="rv_solidColor" format="color" />
+        <attr name="rv_rippleDuration" format="integer" />
+        <!--
+        between  0.0 ~ 1.0
+        -->
+        <attr name="rv_radiusDelta" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="FocusView">
+        <attr name="fv_animationDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ShutterView">
+        <attr name="sv_delayedTouchDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="BlinkTextView">
+        <attr name="btv_blinkColor" format="color" />
+        <attr name="btv_blinkRadius" format="dimension" />
+        <attr name="btv_blinkVisibleDuration" format="integer" />
+        <attr name="btv_blinkInVisibleDuration" format="integer" />
+        <attr name="btv_blinkGravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ZoomSeekBar">
+        <attr name="zsb_iconTint" format="color" />
+        <attr name="zsb_progress" format="integer" />
+        <attr name="zsb_max" format="integer" />
+        <attr name="zsb_animationDuration" format="integer" />
+        <attr name="zsb_incrementValue" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="Group">
+        <attr name="ids" format="string" />
+    </declare-styleable>
+    <declare-styleable name="FLayout">
+        <attr name="effectWidth" format="dimension" />
+        <attr name="effectColor" format="color" />
+        <attr name="effectDuration" format="integer" />
+    </declare-styleable>
+</resources>

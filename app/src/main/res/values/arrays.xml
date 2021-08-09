@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="flashLightSources">
+        <item>@drawable/flash_off</item>
+        <item>@drawable/flash_on</item>
+        <item>@drawable/flash_auto</item>
+    </integer-array>
+    <integer-array name="toggleCameraSources">
+        <item>@drawable/camera_revert2</item>
+        <item>@drawable/camera_revert1</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="ps_root"
+    app:iconSpaceReserved="false">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/Str_General">
+        <Preference
+            android:key="dataStorage"
+            app:iconSpaceReserved="false"
+            app:title="@string/Str_Storage" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="glideLoadImage"
+            app:iconSpaceReserved="false"
+            app:summary="@string/Str_OriginalOutputSummary"
+            app:title="@string/Str_OriginalOutputSize" />
+        <SwitchPreferenceCompat xmlns:tools="http://schemas.android.com/tools"
+            android:defaultValue="true"
+            android:key="fullScreenPreview"
+            app:iconSpaceReserved="false"
+            app:title="@string/Str_FullscreenPreview"
+            tools:targetApi="LOLLIPOP" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="عکس">
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="photoOrientationProblem"
+            app:iconSpaceReserved="false"
+            app:summary="@string/Str_RotationProblemSummary"
+            app:title="@string/Str_SolveRotationProblem" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="photoMirror"
+            app:iconSpaceReserved="false"
+            app:summary="@string/Str_PhotoMirrorSummary"
+            app:title="@string/Str_PhotoMirror" />
+        <PreferenceScreen
+            android:key="ps_photo"
+            app:iconSpaceReserved="false"
+            app:summary="@string/Str_PhotoSizeSummary"
+            app:title="@string/Str_PhotoSize">
+            <Preference
+                android:key="photoSizeRear"
+                app:allowDividerBelow="true"
+                app:iconSpaceReserved="false"
+                app:summary="@string/Str_DefaultSize"
+                app:title="@string/Str_PhotoFromRear" />
+            <Preference
+                android:key="photoSizeFront"
+                app:iconSpaceReserved="false"
+                app:summary="@string/Str_DefaultSize"
+                app:title="@string/Str_PhotoFromFront" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/Str_Video">
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="captureHighFPS"
+            android:title="@string/Str_FpsTitle"
+            app:iconSpaceReserved="false"
+            app:summary="@string/Str_FpsSummary" />
+<!--
+        <PreferenceScreen
+            android:key="ps_video"
+            app:iconSpaceReserved="false"
+            app:summary="نسبت تصویر و وضوح فیلم های گرفته شده با دوربین های عقب و جلو را تنظیم کنید"
+            app:title="اندازه فیلم">
+            <Preference
+                android:key="videoSizeRear"
+                app:allowDividerBelow="true"
+                app:iconSpaceReserved="false"
+                app:summary="اندازه پیشفرض"
+                app:title="فیلم از دوربین عقب" />
+            <Preference
+                android:key="videoSizeFront"
+                app:iconSpaceReserved="false"
+                app:summary="اندازه پیشفرض"
+                app:title="فیلم از دوربین جلو" />
+        </PreferenceScreen>
+-->
+    </PreferenceCategory>
+
+</PreferenceScreen>

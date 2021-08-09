@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">دوربین</string>
+    <string name="Str_ConfirmationPermissionTitle">
+        عدم دریافت جواز
+    </string>
+    <string name="Srt_ConfirmationPermissionMessage">
+        کارکرد صحیح این اپلیکیشن وابسته به جوازهای دوربین، حافظه و میکروفون است.
+    </string>
+    <string name="Srt_ResetPreferencesMessage">
+        تمامی تنظیمات به حالت اولیه تنظیم شوند؟
+    </string>
+    <string name="Srt_Cancel">لغو</string>
+    <string name="Str_Save">ذخیره</string>
+    <string name="Str_Delete">حذف</string>
+    <string name="Str_CameraFailed">خطایی پیش آمده. ممکن است اندازه انتخاب شده توسط سخت افزار شما پشتیبانی نشود</string>
+    <string name="Str_CameraDeviceError">باز کردن دوربین با مشکل مواجه شد. ممکن است اندازه انتخابی پشتیبانی نشود</string>
+    <string name="Str_ShutterHelp">برای عکس ضربه بزنید، برای فیلم نگه دارید</string>
+    <string name="Str_FpsSummary">پیش نمایش و فیلم برداری با بالاترین FPS پشتیبان شده توسط دوربین</string>
+    <string name="Str_FpsTitle">حداکثر FPS</string>
+    <string name="Str_Video">فیلم</string>
+    <string name="Str_DefaultSize">اندازه پیشفرض</string>
+    <string name="Str_PhotoFromRear">عکس از دوبین عقب</string>
+    <string name="Str_PhotoFromFront">عکس از دوربین جلو</string>
+    <string name="Str_PhotoSize">اندازه عکس</string>
+    <string name="Str_PhotoSizeSummary">نسبت تصویر و وضوح عکس های گرفته شده با دوربین های عقب و جلو را تنظیم کنید</string>
+    <string name="Str_PhotoMirrorSummary">ذخیره عکس ها با حالت آیینه</string>
+    <string name="Str_PhotoMirror">حالت آیینه برای عکس های دوربین جلو</string>
+    <string name="Str_RotationProblemSummary">در صورتی که عکس گرفته شده در جهت نادرستی چرخیده شده، این گزینه را فعال کنید</string>
+    <string name="Str_SolveRotationProblem">حل مشکل جهت عکس</string>
+    <string name="Str_FullscreenPreview">پیش نمایش تمام صفحه</string>
+    <string name="Str_OriginalOutputSize">خروجی با اندازه اصلی</string>
+    <string name="Str_OriginalOutputSummary">بارگیری تصویر و نمایش با اندازه اصلی</string>
+    <string name="Str_Storage">محل ذخیره</string>
+    <string name="Str_General">عمومی</string>
+    <string name="Str_PhotoResolution">وضوح عکس</string>
+</resources>
